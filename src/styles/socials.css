@@ -1,0 +1,15 @@
+.social-box {
+	display: flex;
+	/* justify-content: flex-start; */
+	width: 40%;
+}
+.icon {
+	display: flex;
+	margin-right: 20px;
+	color: rgb(123, 123, 123);
+}
+
+.icon:hover {
+	color: #bf6f00;
+	cursor: pointer;
+}
