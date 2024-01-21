@@ -1,5 +1,21 @@
 import projects from '../projects';
+interface TechProps {
+	icons: string[];
+}
 
+const ProjectTech: React.FC<TechProps> = ({ icons }) => {
+	return (
+		<div className='project-card-tech'>
+			{icons.map((icon: string) => {
+				return icon.match('typescript') ? (
+					<img className='ts-icon' src={icon}></img>
+				) : (
+					<img className='project-card-icons ' src={icon}></img>
+				);
+			})}
+		</div>
+	);
+};
 const ProjectList = () => {
 	return (
 		<div className='projects-list-container'>
@@ -13,16 +29,7 @@ const ProjectList = () => {
 						<div className='project-card-content'>
 							<div className='project-card-description'>{description}</div>
 						</div>
-						{/* <ProjectTech icons={iconSource } /> */}
-						<div className='project-card-tech'>
-							{iconSource.map((icon) => {
-								return icon.match('typescript') ? (
-									<img className='ts-icon' src={icon}></img>
-								) : (
-									<img className='project-card-icons ' src={icon}></img>
-								);
-							})}
-						</div>
+						<ProjectTech icons={iconSource} />
 						<div className='project-card-actions'>
 							<a className='project-code-button'>View Code</a>
 						</div>
