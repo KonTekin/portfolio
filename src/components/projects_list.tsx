@@ -10,7 +10,7 @@ const ProjectTech: React.FC<TechProps> = ({ icons }) => {
 				return icon.match('typescript') ? (
 					<img className='ts-icon' src={icon}></img>
 				) : (
-					<img className='project-card-icons ' src={icon}></img>
+					<img className='project-card-icons' src={icon}></img>
 				);
 			})}
 		</div>
@@ -19,7 +19,7 @@ const ProjectTech: React.FC<TechProps> = ({ icons }) => {
 const ProjectList = () => {
 	return (
 		<div className='projects-list-container'>
-			{projects.map(({ title, status, description, iconSource }) => {
+			{projects.map(({ title, status, description, iconSource, github }) => {
 				return (
 					<div className='project-card'>
 						<div className='project-card-title'>
@@ -31,7 +31,9 @@ const ProjectList = () => {
 						</div>
 						<ProjectTech icons={iconSource} />
 						<div className='project-card-actions'>
-							<a className='project-code-button'>View Code</a>
+							<a href={github} target='_blank' className='project-code-button'>
+								View Code
+							</a>
 						</div>
 					</div>
 				);

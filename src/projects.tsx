@@ -3,6 +3,7 @@ interface Project {
 	status: string;
 	description: string;
 	iconSource: string[];
+	github: string;
 }
 
 const projects: Project[] = [
@@ -14,6 +15,7 @@ const projects: Project[] = [
 									web development. I'll change this website continously as I find new technologies
 									that I would like to try out.`,
 		iconSource: ['src/assets/vite.svg', 'src/assets/react.svg'],
+		github: 'https://github.com/KonTekin/portfolio',
 	},
 	{
 		title: 'Blackjack Guru',
@@ -23,6 +25,7 @@ const projects: Project[] = [
         Supports general rules for now but will add rules based on different areas later
         on.`,
 		iconSource: ['src/assets/vite.svg', 'src/assets/react.svg', 'src/assets/icons8-typescript.svg'],
+		github: '',
 	},
 	{
 		title: 'Clanity',
@@ -36,6 +39,7 @@ const projects: Project[] = [
 			'src/assets/react.svg',
 			'src/assets/icons8-typescript.svg',
 		],
+		github: '',
 	},
 ];
 
