@@ -1,4 +1,4 @@
-.social-box {
+.socials {
 	display: flex;
 	/* justify-content: flex-start; */
 	width: 40%;
@@ -12,4 +12,10 @@
 .icon:hover {
 	color: #bf6f00;
 	cursor: pointer;
+}
+.container {
+	width: 100%;
+	margin-top: 15%;
+	display: flex;
+	justify-content: space-between;
 }

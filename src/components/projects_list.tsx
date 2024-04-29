@@ -1,16 +1,18 @@
-import projects from '../projects';
+import projects from "../projects";
+import styles from "../styles/projects.module.css";
 interface TechProps {
 	icons: string[];
 }
 
 const ProjectTech: React.FC<TechProps> = ({ icons }) => {
 	return (
-		<div className='project-card-tech'>
+		<div className={styles.cardTech}>
 			{icons.map((icon: string) => {
-				return icon.match('typescript') ? (
-					<img className='ts-icon' src={icon}></img>
+				// biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
+				return icon.match("typescript") ? (
+					<img className={styles.tsIcon} src={icon} alt="typescript icon" />
 				) : (
-					<img className='project-card-icons' src={icon}></img>
+					<img className={styles.cardIcons} src={icon} alt="Other icons" />
 				);
 			})}
 		</div>
@@ -18,20 +20,26 @@ const ProjectTech: React.FC<TechProps> = ({ icons }) => {
 };
 const ProjectList = () => {
 	return (
-		<div className='projects-list-container'>
+		<div className={styles.listContainer}>
 			{projects.map(({ title, status, description, iconSource, github }) => {
 				return (
-					<div className='project-card'>
-						<div className='project-card-title'>
-							<h3 className='project-title'>{title}</h3>
-							<p className='project-status'>{status}</p>
+					// biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
+					<div className={styles.card}>
+						<div className={styles.cardTitle}>
+							<h3 className={styles.title}> {title}</h3>
+							<p className={styles.status}>{status}</p>
 						</div>
-						<div className='project-card-content'>
-							<div className='project-card-description'>{description}</div>
+						<div>
+							<div className={styles.cardDescription}>{description}</div>
 						</div>
 						<ProjectTech icons={iconSource} />
-						<div className='project-card-actions'>
-							<a href={github} target='_blank' className='project-code-button'>
+						<div className={styles.cardActions}>
+							<a
+								href={github}
+								target="_blank"
+								className={styles.button}
+								rel="noreferrer"
+							>
 								View Code
 							</a>
 						</div>

@@ -1,17 +1,22 @@
 import { SocialIcons } from "./social_links";
+import styles from "../styles/hero.module.css";
 
 const Hero = () => {
 	return (
-		<div className='hero-container'>
-			<div className='hero-text-container'>
-				<h1 className='hero-text-title'>Hey, I'm Kon</h1>
-				<p className='hero-text-tagline'>Squashing bugs one line of code at a time</p>
-				<div className='social-container'>
-					<SocialIcons />
-				</div>
+		<div className={styles.container}>
+			<div className={styles.text}>
+				<h1 className={styles.title}>Hey, I'm Kon</h1>
+				<p className={styles.tagline}>
+					Squashing bugs one line of code at a time
+				</p>
+				<SocialIcons />
 			</div>
-			<div className='image-container'>
-				<img className='hero-image' src='src/assets/orange.jpg' alt='Outer space orange nebula' />
+			<div>
+				<img
+					className={styles.heroImage}
+					src="src/assets/orange.jpg"
+					alt="Outer space orange nebula"
+				/>
 			</div>
 		</div>
 	);

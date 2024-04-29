@@ -1,0 +1,35 @@
+.container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.text {
+	display: flex;
+	margin-left: 10%;
+	justify-self: flex-end;
+	flex-direction: column;
+	color: #bf6f00;
+}
+.title {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 78px;
+	padding-bottom: 16px;
+}
+.tagline {
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	padding-left: 4px;
+}
+
+.heroImage {
+	width: 900px;
+	rotate: -90deg;
+	mask-image: url('src/assets/mask1.svg');
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+}

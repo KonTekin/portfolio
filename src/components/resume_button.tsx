@@ -1,10 +1,15 @@
-import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-import '../styles/resume.css';
+import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
+import styles from "../styles/resume.module.css";
 export const ResumeButton = () => {
 	return (
-		<div className='resume-box'>
-			<a target='_blank' className='button' href='Resume.pdf'>
-				<DownloadForOfflineIcon className='resume-icon' />
+		<div className={styles.container}>
+			<a
+				target="_blank"
+				className={styles.button}
+				href="Resume.pdf"
+				rel="noreferrer"
+			>
+				<DownloadForOfflineIcon className={styles.icon} />
 				<div>Resume</div>
 			</a>
 		</div>

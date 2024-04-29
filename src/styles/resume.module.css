@@ -1,4 +1,4 @@
-.resume-box {
+.container {
 	display: flex;
 	padding: inherit;
 	width: 150px;
@@ -16,16 +16,17 @@ a {
 	align-items: center;
 	justify-content: center;
 	background-color: #0c0b09;
-	color: #2EA9D2;
+	color: #25c9ff;
 	font-family: 'Inter', sans-serif;
 	border-radius: 10px;
-	border: 1px solid #2EA9D2;
+	border: 1px solid #2ea9d2;
+	font-weight: 600;
 }
 
 .button:hover {
 	cursor: pointer;
 }
 
-.resume-icon {
+.icon {
 	margin-right: 12px;
 }
