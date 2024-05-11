@@ -1,0 +1,49 @@
+.container {
+	position: fixed;
+	display: flex;
+	z-index: 2;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-around;
+	top: 20px;
+	right: 0;
+	width: 300px;
+	font-family: 'Exo 2', sans-serif;
+	color: #2ea9d2;
+}
+.link {
+	text-decoration: none;
+	color: #2ea9d2;
+}
+.menu{
+    display: none;
+    color: #2ea9d2;
+}
+.hideArrow{
+	display: none;
+}
+
+@media (max-width: 768px) {
+    .container{
+        right: -100%;
+		opacity: 0;
+		transition: all 0.3s ease-in-out;
+    }
+	.open{
+		right: 0;
+		opacity: 100;
+	}
+    .menu{
+        position: fixed;
+        display: inline;
+        top: 30px;
+        right: 20px;
+    }
+	.hideArrow{
+		display: block;
+	}
+
+	.hidden{
+		display: none;
+	}
+}

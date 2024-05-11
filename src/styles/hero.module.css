@@ -2,7 +2,7 @@
 	display: flex;
 	width: 100vw;
 	height: 100vh;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 }
 .text {
@@ -10,7 +10,7 @@
 	margin-left: 10%;
 	justify-self: flex-end;
 	flex-direction: column;
-	color: #bf6f00;
+	color: #e1952a;
 }
 .title {
 	font-family: 'Exo 2', sans-serif;
@@ -23,6 +23,8 @@
 	font-weight: lighter;
 	letter-spacing: 1px;
 	padding-left: 4px;
+	color: #e1952a;
+
 }
 
 .heroImage {
@@ -32,4 +34,29 @@
 	mask-size: contain;
 	mask-repeat: no-repeat;
 	mask-position: center;
+}
+
+@media (max-width: 768px) {
+    .imageContainer{
+        position: absolute;
+        background-image: url("src/assets/orange.jpg");
+        opacity: 0.4;
+        top: 15%;
+	    mask-image: url('src/assets/mask1.svg');
+        mask-size: cover;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        rotate: 360deg;
+        width: 100%;
+        height: 80%;
+    }
+    .text{
+        margin-left: 1rem;
+        z-index: 10;
+	    color: #e1952a;
+
+    }
+    .heroImage{
+        display: none;
+    }
 }

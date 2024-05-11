@@ -25,39 +25,3 @@ button {
 	overflow-x: hidden;
 }
 
-.nav-container {
-	position: fixed;
-	display: flex;
-	z-index: 2;
-	flex-direction: row-reverse;
-	align-items: center;
-	justify-content: space-around;
-	top: 20px;
-	right: 0;
-	width: 300px;
-	font-family: 'Exo 2', sans-serif;
-	color: #2ea9d2;
-}
-.nav-link {
-	text-decoration: none;
-	color: #2ea9d2;
-}
-
-
-@media (max-width: 768px) {
-	/* hrml, body {
-
-		overflow-x: hidden;
-		height: 100%;
-	}
-	body {
-		width: 100%;
-	} */
-	.projects-list-container{
-		display: flex;
-		flex-direction: column;
-	}
-	.hero-image{
-		display: none;
-	}
-  }

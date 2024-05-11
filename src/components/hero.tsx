@@ -11,6 +11,8 @@ const Hero = () => {
 				</p>
 				<SocialIcons />
 			</div>
+			{/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
+			<div className={styles.imageContainer}></div>
 			<div>
 				<img
 					className={styles.heroImage}

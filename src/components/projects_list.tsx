@@ -8,10 +8,11 @@ const ProjectTech: React.FC<TechProps> = ({ icons }) => {
 	return (
 		<div className={styles.cardTech}>
 			{icons.map((icon: string) => {
-				// biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
 				return icon.match("typescript") ? (
+					// biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
 					<img className={styles.tsIcon} src={icon} alt="typescript icon" />
 				) : (
+					// biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
 					<img className={styles.cardIcons} src={icon} alt="Other icons" />
 				);
 			})}
