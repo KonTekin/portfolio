@@ -7,7 +7,7 @@ const Hero = () => {
 			<div className={styles.text}>
 				<h1 className={styles.title}>Hey, I'm Kon</h1>
 				<p className={styles.tagline}>
-					Squashing bugs one line of code at a time
+					My place for all things dev, tech, and personal interests!
 				</p>
 				<SocialIcons />
 			</div>

@@ -1,6 +1,6 @@
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import TwitterIcon from "@mui/icons-material/Twitter";
+// import TwitterIcon from "@mui/icons-material/Twitter";
 import styles from "../styles/socials.module.css";
 
 export const SocialIcons = () => {
@@ -17,13 +17,13 @@ export const SocialIcons = () => {
 				>
 					<LinkedInIcon className={styles.icon} />
 				</a>
-				<a
+				{/* <a
 					href="https://twitter.com/KonstantinTekin"
 					target="_blank"
 					rel="noreferrer"
 				>
 					<TwitterIcon className={styles.icon} />
-				</a>
+				</a> */}
 			</div>
 		</div>
 	);

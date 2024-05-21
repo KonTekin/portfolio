@@ -6,7 +6,7 @@ export const ResumeButton = () => {
 			<a
 				target="_blank"
 				className={styles.button}
-				href="Resume.pdf"
+				href="../resume.pdf"
 				rel="noreferrer"
 			>
 				<DownloadForOfflineIcon className={styles.icon} />
