@@ -36,6 +36,7 @@ const ProjectList = () => {
 						<ProjectTech icons={iconSource} />
 						<div className={styles.cardActions}>
 							<a
+								aria-disabled={github ? "false" : "true"}
 								href={github}
 								target="_blank"
 								className={styles.button}

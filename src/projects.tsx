@@ -3,7 +3,7 @@ interface Project {
 	status: string;
 	description: string;
 	iconSource: string[];
-	github: string;
+	github?: string;
 }
 
 const projects: Project[] = [
@@ -27,7 +27,7 @@ const projects: Project[] = [
 			"src/assets/react.svg",
 			"src/assets/icons8-typescript.svg",
 		],
-		github: "",
+		github: "https://github.com/KonTekin/blackjack-sensei",
 	},
 	{
 		title: "Item Vendor",
@@ -39,7 +39,6 @@ const projects: Project[] = [
 			"src/assets/react.svg",
 			"src/assets/icons8-typescript.svg",
 		],
-		github: "",
 	},
 	// {
 	// 	title: "Clanity",

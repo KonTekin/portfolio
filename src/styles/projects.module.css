@@ -71,6 +71,7 @@
 	text-decoration: none;
 	width: 100%;
 	padding: 10px;
+	margin-bottom: 10px;
 	background-color: #bf6f00;
 	text-align: center;
 	cursor: pointer;
@@ -79,6 +80,12 @@
 	font-weight: 400;
 	color: #0c0b09;
 }
+a[aria-disabled="true"] {
+	background-color: gray;
+	pointer-events: none;
+	text-decoration: none;
+	cursor: not-allowed;
+  }
 .tsIcon {
 	width: 32px;
 	height: 32px;
