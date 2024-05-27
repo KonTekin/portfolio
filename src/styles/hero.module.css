@@ -30,7 +30,7 @@
 .heroImage {
 	width: 900px;
 	rotate: -90deg;
-	mask-image: url('src/assets/mask1.svg');
+	mask-image: url('../mask1.svg');
 	mask-size: contain;
 	mask-repeat: no-repeat;
 	mask-position: center;
@@ -39,10 +39,10 @@
 @media (max-width: 768px) {
     .imageContainer{
         position: absolute;
-        background-image: url("src/assets/orange.jpg");
+        background-image: url("../orange.jpg");
         opacity: 0.4;
         top: 15%;
-	    mask-image: url('src/assets/mask1.svg');
+	    mask-image: url('../mask1.svg');
         mask-size: cover;
         mask-repeat: no-repeat;
         mask-position: center;

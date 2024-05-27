@@ -55,6 +55,7 @@
 	text-align: center;
 	font-family: 'Inter', sans-serif;
 	color: #e1952a;
+	text-rendering: optimizeLegibility;
 }
 .cardTech {
 	padding: 10px 20px;

@@ -8,14 +8,14 @@ export const SocialIcons = () => {
 		<div className={styles.container}>
 			<div className={styles.socials}>
 				<a href="https://github.com/KonTekin" target="_blank" rel="noreferrer">
-					<GitHubIcon className={styles.icon} />
+					<GitHubIcon sx={{ fontSize: 30 }} className={styles.icon} />
 				</a>
 				<a
 					href="https://www.linkedin.com/in/konstantin-tekin-96b674239/"
 					target="_blank"
 					rel="noreferrer"
 				>
-					<LinkedInIcon className={styles.icon} />
+					<LinkedInIcon sx={{ fontSize: 30 }} className={styles.icon} />
 				</a>
 				{/* <a
 					href="https://twitter.com/KonstantinTekin"

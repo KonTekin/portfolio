@@ -16,7 +16,7 @@ const Hero = () => {
 			<div>
 				<img
 					className={styles.heroImage}
-					src="src/assets/orange.jpg"
+					src="../orange.jpg"
 					alt="Outer space orange nebula"
 				/>
 			</div>
